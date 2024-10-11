@@ -1,40 +1,52 @@
-Yeh hai ek sample README file:
-EmployWise Assignment
+EmployWise
+EmployWise is a user management application built with React, providing functionality for authentication, user listing, editing, deleting, and updating users. It integrates Reqres API for backend operations and is hosted on Vercel.
 
 Features
 Authentication Screen (Login)
-List All Users (Paginated)
+Paginated User Listing
 Edit, Delete, and Update Users
-Client-side Search and Filtering 
-React Router navigation 
-Hosted on Vercel
+Client-side Search and Filtering
+React Router Navigation
+Deployed on Vercel
 Installation
-Clone repository: git clone https://github.com/Nikhil-1402/EmployWise.git
+Follow the steps below to install and run the application locally:
+
+Clone the repository: git clone https://github.com/Nikhil-1402/EmployWise.git
+
 Install dependencies: npm install or yarn install
-Start application: npm run dev
+
+Start the development server: npm run dev
+
 Usage
-Open application in browser:http://localhost:5173/
-Login with credentials: eve.holt@reqres.in / cityslicka
-Navigate to Users List page
-Edit, Delete, and Update users
+Open the application in your browser: http://localhost:5173/
+
+Login using the following credentials:
+
+Email: eve.holt@reqres.in
+Password: cityslicka
+Navigate to the Users List page to:
+
+Edit, delete, and update users.
 API Documentation
-Reqres API: https://reqres.in/
-Endpoints:
+This project uses the Reqres API for its backend operations. Key API endpoints are:
+
 POST /api/login
 GET /api/users?page=1
 PUT /api/users/{id}
 DELETE /api/users/{id}
+For more details on the Reqres API, visit Reqres API.
+
 Dependencies
 React
 Axios
 React Router (Bonus)
 Vercel (Bonus)
 Assumptions
-Reqres API availability
-Correct credentials for login
+Availability of Reqres API.
+Correct credentials for login.
 Contact
 Your Name: Nikhil Kumar Gupta
 Email: nikhillko1402@gmail.com
-GitHub: https://github.com/Nikhil-1402
+GitHub: Nikhil-1402
 Hosted Link
 https://employ-wise.vercel.app/
