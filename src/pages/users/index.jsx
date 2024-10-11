@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Pagination, UserCard } from "../../components";
 import { fetchUsers } from "../../api/apiCalls";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -9,6 +11,8 @@ const Users = () => {
   const [refresh, setRefresh] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
+  const { isLoggedIn } = useSelector((state) => state.auth);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -41,6 +45,13 @@ const Users = () => {
     });
     setFilteredUsers(filtered);
   };
+
+  useEffect(() => {
+    if (!isLoggedIn) {
+      navigate("/");
+    }
+  }, [isLoggedIn, navigate]);
+
   return (
     <>
       <Navbar />
