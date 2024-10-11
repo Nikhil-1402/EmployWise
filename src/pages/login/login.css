@@ -1,0 +1,13 @@
+.img {
+  background:linear-gradient(#000000a3,#000000a3), url("https://images.pexels.com/photos/3182826/pexels-photo-3182826.jpeg?auto=compress&cs=tinysrgb&w=2000&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.roboto{
+    font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 8px;
+}
